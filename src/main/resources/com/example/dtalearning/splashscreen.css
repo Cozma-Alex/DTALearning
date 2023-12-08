@@ -1,0 +1,7 @@
+#rootPane{
+    -fx-background-color: linear-gradient(to top, rgb(23, 93, 120), rgb(33, 113, 145));
+}
+
+#logoPane{
+    -fx-background-radius: 50px;
+}
