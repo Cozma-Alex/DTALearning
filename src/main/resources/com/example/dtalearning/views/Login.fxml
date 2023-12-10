@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" styleClass="smallPane" stylesheets="@../style/loginStyle.css" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="450.0" AnchorPane.topAnchor="180.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtalearning.gui.LoginController">
+    <children>
+        <Button layoutX="535.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="40.0" prefWidth="40.0" styleClass="close_button" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+        <AnchorPane prefHeight="356.0" prefWidth="466.0" styleClass="backgroundPane" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="70.0">
+            <children>
+                <Label fx:id="label_title" prefHeight="40.0" text="Welcome back" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="20.0" />
+                <GridPane prefHeight="60.0" prefWidth="550.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints />
+                        <RowConstraints prefHeight="30.0" />
+                    </rowConstraints>
+                    <children>
+                        <TextField fx:id="usernameField" prefHeight="50.0" promptText="Username">
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                        </TextField>
+                        <PasswordField fx:id="passwordField" prefHeight="50.0" prefWidth="200.0" promptText="Password" GridPane.rowIndex="1">
+                            <padding>
+                                <Insets left="50.0" />
+                            </padding>
+                        </PasswordField>
+                        <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/person.png" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="2.0" />
+                            </GridPane.margin>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                            <image>
+                                <Image url="@../images/lock.png" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="5.0" />
+                            </GridPane.margin>
+                        </ImageView>
+                    </children>
+                </GridPane>
+                <Label fx:id="errorMessageLabel" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="380.0" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Button mnemonicParsing="false" onAction="#handleLogin" prefHeight="40.0" prefWidth="120.0" styleClass="button_login" text="Login" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="175.0" />
+                <Hyperlink onAction="#handleRegister" text="Need an account? Register" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+                <ImageView fitHeight="70.0" fitWidth="300.0" layoutX="204.0" layoutY="24.0" pickOnBounds="true" visible="false" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="22.0">
+                    <image>
+                        <Image url="@../images/long-logo.png" />
+                    </image>
+                </ImageView>
+            </children></AnchorPane>
+    </children></AnchorPane>

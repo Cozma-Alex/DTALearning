@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="824.0" prefWidth="1536.0" maxWidth="1536" maxHeight="824" stylesheets="@../style/PsychologistPageStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtalearning.gui.PsychologistPageController">
+    <children>
+        <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane maxWidth="310.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="80.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="300.0" layoutX="50.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
+                            <image>
+                                <Image url="@../images/Full-Logo.png" />
+                            </image>
+                        </ImageView>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="label_details" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+                            <children>
+                                <Label fx:id="name" prefHeight="80.0" text="Full Name" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0" />
+                                <Label fx:id="username" prefHeight="80.0" text="Username" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0" />
+                                <Label fx:id="email" layoutX="10.0" layoutY="130.0" prefHeight="80.0" text="Email" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="230.0" />
+                                <!--                                <Label fx:id="phoneNumber" layoutX="10.0" layoutY="240.0" prefHeight="80.0" text="Telefon" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="340.0" />-->
+                            </children>
+                        </AnchorPane>
+                        <Button layoutX="124.0" layoutY="696.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="70.0" text="Log out" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <SplitPane dividerPositions="0.29797979797979796" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <Label fx:id="label_title" prefHeight="80.0" text="Dr. psychologist Andrelius Pompilius" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0" />
+                                        <TableView fx:id="patientsTableView" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="250.0">
+                                            <columns>
+                                                <TableColumn fx:id="patientFullName" prefWidth="350.0" text="Full name" />
+                                                <TableColumn fx:id="patientUsername" prefWidth="350.0" text="Username" />
+                                            </columns>
+                                        </TableView>
+                                        <TextField fx:id="searchTextField" layoutX="211.0" layoutY="163.0" prefHeight="60.0" promptText="Search" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="150.0" />
+                                        <CheckBox fx:id="allCheckBox" layoutX="800.0" layoutY="150.0" mnemonicParsing="false" onAction="#allCheckBoxHandler" prefHeight="60.0" prefWidth="100.0" text="All" AnchorPane.rightAnchor="0.0">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                        </CheckBox>
+                                        <Button fx:id="addButton" layoutX="401.0" layoutY="703.0" mnemonicParsing="false" onAction="#addButtonHandler" text="Add" />
+                                        <Button fx:id="deleteButton" layoutX="100.0" layoutY="703.0" mnemonicParsing="false" onAction="#deleteButtonHandler" text="Delete" />
+                                        <Button layoutX="665.0" layoutY="703.0" mnemonicParsing="false" onAction="#homeworkHandler" text="Homework" />
+                                    </children></AnchorPane>
+                                <AnchorPane maxWidth="310.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <Button layoutX="535.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="40.0" prefWidth="40.0" styleClass="close_button" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0" />
+                                        <Label fx:id="create_test_label" prefHeight="150.0" text="Create test" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0" />
+                                        <ComboBox fx:id="categoriesComboBox" layoutX="43.0" layoutY="262.0" prefHeight="40.0" prefWidth="150.0" promptText="Category" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="270.0" />
+                                        <Button onAction="#handleCreateTest" layoutX="124.0" layoutY="569.0" mnemonicParsing="false" prefHeight="70.0" text="Create" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="500.0" />
+                                        <ImageView fx:id="subscriptionImage" fitHeight="200.0" fitWidth="240.0" layoutX="55.0" layoutY="610.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="20.0">
+                                            <image>
+                                                <Image url="@../images/bg.jpg" />
+                                            </image>
+                                        </ImageView>
+                                    </children></AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

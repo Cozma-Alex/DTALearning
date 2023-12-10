@@ -1,0 +1,73 @@
+.smallPane {
+    -fx-background-color: linear-gradient(to top, rgb(6, 157, 217), rgb(166, 220, 246));
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 2;
+
+}
+
+.close_button{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/close.png");
+    -fx-background-size: cover;
+    -fx-background-position: bottom;
+    -fx-background-repeat: repeat-x;
+}
+
+.backgroundPane {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, black, 10, 0, 0, 4);
+}
+
+#label_title {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 36px;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+}
+
+.label {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 18;
+    -fx-text-fill: black;
+    -fx-alignment: center-left;
+}
+
+.label_register {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 18;
+    -fx-text-fill: #980398;
+    -fx-underline: true;
+    -fx-alignment: center-left;
+}
+
+.text-field{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #696969;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, #808080, 5, 0, 0, 4);
+    -fx-font-size: 20;
+}
+
+.button_login {
+    -fx-background-color: rgb(31, 85, 222);
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+}
+
+.button_login:hover {
+    -fx-background-color: #040caf;
+}
+
+#errorMessageLabel {
+    -fx-alignment: center;
+    -fx-text-fill: red;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 18;
+}

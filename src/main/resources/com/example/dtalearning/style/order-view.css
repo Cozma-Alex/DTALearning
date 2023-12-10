@@ -1,0 +1,17 @@
+.label{
+    -fx-font-family: "Microsoft JhengHei";
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.button {
+    -fx-background-color: rgb(31, 85, 222);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 5 10 5 10;
+    -fx-background-radius: 5;
+}
+
+#rootPane{
+    -fx-background-color: linear-gradient(to top, rgb(117, 204, 239), rgb(166, 220, 246));
+}

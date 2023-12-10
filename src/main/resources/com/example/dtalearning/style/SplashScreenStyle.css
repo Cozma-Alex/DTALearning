@@ -1,0 +1,15 @@
+#rootPane{
+    /*-fx-background-color: linear-gradient(to top, rgb(23, 93, 120), rgb(33, 113, 145));*/
+    -fx-background-color: linear-gradient(to bottom, rgb(4, 145, 203), rgb(139, 185, 213));
+}
+
+#logoPane{
+    -fx-background-radius: 50px;
+}
+
+.loading_label {
+    -fx-font-weight: Bold;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="650.0" prefWidth="600.0" stylesheets="@../style/PatientWindowStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtalearning.gui.PatientWindowController">
+   <children>
+      <Button layoutX="535.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="40.0" prefWidth="40.0" styleClass="close_button" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+
+
+      <Label layoutX="111.0" layoutY="41.0" prefHeight="80.0" text="Welcome nume prenume" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="40.0" />
+      <Button layoutX="80.0" layoutY="576.0" mnemonicParsing="false" prefHeight="60.0" text="Play Game" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="350.0" />
+      <Button layoutX="100.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="60.0" text="Log out" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="110.0" />
+      <AnchorPane fx:id="imgPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="150.0">
+         <children>
+            <ImageView fx:id="img1" fitHeight="100" fitWidth="100" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0"> </ImageView>
+            <ImageView fx:id="img2" fitHeight="100" fitWidth="100" layoutX="125.0" layoutY="10.0" AnchorPane.topAnchor="10.0"> </ImageView>
+            <ImageView fx:id="img3" fitHeight="100" fitWidth="100" layoutX="250.0" layoutY="10.0" AnchorPane.bottomAnchor="215.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="10.0"> </ImageView>
+            <ImageView fx:id="img4" fitHeight="100" fitWidth="100" layoutX="378.0" layoutY="10.0" AnchorPane.topAnchor="10.0"> </ImageView>
+         </children>
+      </AnchorPane>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,135 @@
+.label_title {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 50px;
+    -fx-text-fill: black;
+    -fx-alignment: center;
+}
+
+#vbox_mon_plan{
+    /*-fx-border-color: #cd7f32;*/
+    -fx-background-color: white;
+    -fx-background-radius: 35;
+    -fx-border-radius: 35;
+    -fx-border-width: 4;
+
+
+    -fx-effect: dropshadow(gaussian, #464646, 12, 0, 0, 10);
+}
+
+#vbox_bi_plan {
+    /*-fx-border-color: #C0C0C0;*/
+    -fx-background-color: white;
+    -fx-background-radius: 35;
+    -fx-border-radius: 35;
+    -fx-border-width: 4;
+    -fx-effect: dropshadow(gaussian, #464646, 12, 0, 0, 10);
+}
+
+#vbox_ann_plan{
+    /*-fx-border-color: #CFB53B;*/
+    -fx-background-color: white;
+    -fx-background-radius: 35;
+    -fx-border-radius: 35;
+    -fx-border-width: 4;
+    -fx-effect: dropshadow(gaussian, #464646, 12, 0, 0, 10);
+}
+
+#label_plans_mon {
+    -fx-text-fill: #cd7f32;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 35px;
+    -fx-alignment: center;
+}
+#label_plans_bi {
+    -fx-text-fill: #C0C0C0;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 35px;
+    -fx-alignment: center;
+}
+#label_plans_ann {
+    -fx-text-fill: #CFB53B;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 35px;
+    -fx-alignment: center;
+}
+
+.background {
+    -fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 50%, center 50% 50%, radius 50%, rgba(224,255,252,1) 6%, rgb(217, 244, 242) 63%);
+}
+
+.label_price {
+    -fx-font-family: Garamond;
+    -fx-font-size: 50px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+#background_price_mon {
+    -fx-background-color: #cd7f32;
+
+}
+#background_price_bi {
+    -fx-background-color: #C0C0C0;
+}
+#background_price_ann {
+    -fx-background-color: #CFB53B;
+}
+
+#label_features_title_mon{
+    -fx-text-fill: #cd7f32;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 30px;
+
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-background-color: white;
+}
+#label_features_title_bi{
+    -fx-text-fill: #C0C0C0;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 30px;
+
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-background-color: white;
+}
+#label_features_title_ann{
+    -fx-text-fill: #CFB53B;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 30px;
+
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-background-color: white;
+}
+
+.text-area{
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 18px;
+    -fx-background-color: transparent;
+    -fx-background-radius: 30;
+    -fx-border-color: transparent;
+    -fx-border-radius: 30;
+    -fx-border-width: 4;
+    -fx-outline: none;
+}
+
+.close_button{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/close.png");
+    -fx-background-size: cover;
+    -fx-background-position: bottom;
+    -fx-background-repeat: repeat-x;
+
+}
+
+.confirm_button {
+    -fx-background-color: rgb(31, 85, 222);
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+}
+
+

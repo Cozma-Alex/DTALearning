@@ -1,0 +1,64 @@
+.label_details .label {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 25px;
+    -fx-text-fill: black;
+    -fx-padding: 20px;
+    -fx-alignment: center-left;
+}
+
+#label_title  {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 40px;
+    -fx-text-fill: black;
+    -fx-padding: 10px;
+    -fx-alignment: center-left;
+}
+
+#create_test_label {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 40px;
+    -fx-text-fill: black;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+.combo-box {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 25px;
+    -fx-text-fill: black;
+    -fx-padding: 10px;
+    -fx-alignment: center-left;
+}
+
+.button {
+    -fx-background-color: rgb(31, 85, 222);
+    -fx-text-fill: white;
+    -fx-font-size: 32px;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+}
+
+.close_button{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/close.png");
+    -fx-background-size: cover;
+    -fx-background-position: bottom;
+    -fx-background-repeat: repeat-x;
+}
+
+.table-view {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    -fx-font-family:  "Microsoft JhengHei Light";
+    -fx-font-size: 20px;
+    -fx-alignment: center;
+}
+
+.text-field {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-text-padding: 50px 10px;
+    -fx-text-fill: #444343;
+    -fx-font-size: 22px;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}

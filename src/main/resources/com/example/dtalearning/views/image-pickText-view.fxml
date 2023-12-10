@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="600.0" stylesheets="@../style/image-pickText-view.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtalearning.gui.tests.ImagePickTextController">
+   <children>
+      <Button layoutX="8.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleAddImage" prefHeight="50.0" prefWidth="125.0" text="Add Image" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" />
+      <TextArea fx:id="textAreaAllOptions" layoutX="201.0" layoutY="14.0" prefHeight="200.0" prefWidth="400.0" promptText="All possible responses" AnchorPane.bottomAnchor="400.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="40.0" />
+      <Button layoutX="46.0" layoutY="305.0" mnemonicParsing="false" onAction="#handlePlayGame" prefHeight="50.0" prefWidth="125.0" text="Test Game" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="190.0" />
+      <TextField fx:id="textFieldGoodOptions" layoutX="296.0" layoutY="317.0" promptText="Correct response" AnchorPane.bottomAnchor="250.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="300.0" />
+      <TextField fx:id="textFieldDescriere" layoutX="296.0" layoutY="279.0" promptText="Game description" AnchorPane.bottomAnchor="320.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="230.0" />
+      <TextField fx:id="textFieldIntrebare" layoutX="296.0" layoutY="355.0" promptText="Question" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="370.0" />
+      <Button onAction="#handleCreateGame" layoutX="503.0" layoutY="516.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="125.0" text="Create Game" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0" />
+      <Label layoutX="20.0" layoutY="40.0" prefHeight="18.0" prefWidth="239.0" text="Create a game in which patients choose " AnchorPane.leftAnchor="12.0" />
+      <Label layoutX="11.0" layoutY="65.0" text="the text that corresponds to a given image." AnchorPane.leftAnchor="6.0" />
+   </children>
+</AnchorPane>

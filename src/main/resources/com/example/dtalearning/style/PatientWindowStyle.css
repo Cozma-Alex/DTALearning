@@ -1,0 +1,24 @@
+.label {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 30px;
+    -fx-text-fill: black;
+    -fx-padding: 10px;
+    -fx-alignment: center-left;
+}
+
+.button {
+    -fx-background-color: rgb(31, 85, 222);
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+}
+
+
+.close_button{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/close.png");
+    -fx-background-size: cover;
+    -fx-background-position: bottom;
+    -fx-background-repeat: repeat-x;
+}

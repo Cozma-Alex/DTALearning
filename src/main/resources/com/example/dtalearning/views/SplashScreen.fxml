@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="712.0" stylesheets="@../style/SplashScreenStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtalearning.gui.SplashScreenController">
+
+    <AnchorPane fx:id="logoPane">
+    <ImageView fitHeight="150.0" fitWidth="401.0" layoutX="158.0" layoutY="6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="130.0">
+        <Image url="@../images/Full-Logo.png" />
+    </ImageView>
+    </AnchorPane>
+
+   <AnchorPane fx:id="spinnerPane" layoutX="256.0" layoutY="278.0" opacity="0.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="175.0">
+      <children>
+       <Label prefHeight="38.0" prefWidth="114.0" styleClass="loading_label" text="WAIT A FEW SECONDS..." textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="80.0" />
+      </children>
+   </AnchorPane>
+</AnchorPane>

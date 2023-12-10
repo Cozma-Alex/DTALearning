@@ -1,0 +1,75 @@
+.smallPane {
+    -fx-background-color: linear-gradient(to top, rgb(6, 157, 217), rgb(166, 220, 246));
+    -fx-border-color: #3d3d3d;
+    -fx-border-width: 2;
+}
+
+.close_button{
+    -fx-background-color: transparent;
+    -fx-background-image: url("../images/close.png");
+    -fx-background-size: cover;
+    -fx-background-position: bottom;
+    -fx-background-repeat: repeat-x;
+}
+
+.backgroundPane {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(45, 45, 45, 0.83), 6, 0, 0, 5);
+}
+
+.label {
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 18;
+    -fx-text-fill: black;
+    -fx-alignment: center-left;
+}
+
+.check-box {
+    -fx-background-color: transparent;
+    -fx-font-family: Microsoft JhengHei Light;
+    -fx-font-size: 14;
+    -fx-text-fill: black;
+    -fx-alignment: center-left;
+}
+
+.check-box:selected {
+    -fx-background-color: #cccccc;
+    -fx-border-color: #999999;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+}
+
+.button_register {
+    -fx-background-color: rgb(31, 85, 222);
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-padding: 10 20 10 20;
+    -fx-background-radius: 5;
+}
+
+.button_register:hover {
+    -fx-background-color: #040caf;
+}
+
+.hyperlink {
+    -fx-font-size: 16;
+}
+
+.text-field{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #696969;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, #808080, 5, 0, 0, 4);
+    -fx-font-size: 20;
+}
+
+.invalid_label {
+    -fx-text-fill: red;
+    -fx-font-size: 30px;
+    -fx-font-family: Microsoft JhengHei Light;
+}

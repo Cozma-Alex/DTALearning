@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="824.0" prefWidth="1536.0" styleClass="background" stylesheets="@../style/Subscriptions.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dtalearning.gui.SubscriptionsController">
+   <children>
+      <Button layoutX="535.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="60.0" prefWidth="60.0" styleClass="close_button" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+
+      <Label prefHeight="60.0" styleClass="label_title" text="Choose your subscription plan" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="255.0" AnchorPane.topAnchor="25.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <VBox layoutX="188.0" layoutY="188.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1022.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="625.6" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="vbox_mon_plan" onMouseClicked="#handleMonPlan" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="40.0">
+                           <children>
+                              <AnchorPane prefHeight="675.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="label_plans_mon" prefHeight="40.0" text="Monthly Subscription" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0" />
+                                    <HBox fx:id="background_price_mon" prefHeight="120.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="654.0">
+                                             <children>
+                                                <Label prefHeight="50.0" styleClass="label_price" text="50 €" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <Label fx:id="label_features_title_mon" prefHeight="40.0" text="Features" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="235.0" />
+                                    <TextArea fx:id="textArea1" editable="false" prefHeight="265.0" prefWidth="200.0" text="&#10;•  Access to our whole test&#10;   catalogue&#10;&#10;•  Contact details of our &#10;   psychologists" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children></VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="511.0" AnchorPane.rightAnchor="511.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="6666.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="vbox_bi_plan" onMouseClicked="#handleBiPlan" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="62.5" AnchorPane.rightAnchor="62.5" AnchorPane.topAnchor="40.0">
+                           <children>
+                              <AnchorPane prefHeight="675.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="label_plans_bi" prefHeight="40.0" text="Biannual subscription" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0" />
+                                    <HBox fx:id="background_price_bi" prefHeight="120.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="654.0">
+                                             <children>
+                                                <Label prefHeight="50.0" styleClass="label_price" text="248 €" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <Label fx:id="label_features_title_bi" prefHeight="40.0" text="Features" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="235.0" />
+                                    <TextArea fx:id="textArea2" editable="false" prefHeight="265.0" prefWidth="200.0" text="&#10;•  Access to our whole test&#10;   catalogue&#10;&#10;•  Contact details of our &#10;   psychologists&#10;&#10;•  Discount: 11,69% from 60€" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+            <VBox layoutX="521.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1022.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane prefHeight="999.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="vbox_ann_plan" onMouseClicked="#handleAnnPlan" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="85.0" AnchorPane.topAnchor="40.0">
+                           <children>
+                              <AnchorPane prefHeight="675.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="label_plans_ann" prefHeight="40.0" text="Yearly subscription" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0" />
+                                    <HBox fx:id="background_price_ann" prefHeight="120.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="654.0">
+                                             <children>
+                                                <Label prefHeight="50.0" styleClass="label_price" text="462 €" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </HBox>
+                                    <Label fx:id="label_features_title_ann" prefHeight="40.0" text="Features" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="235.0" />
+                                    <TextArea fx:id="textArea3" editable="false" prefHeight="265.0" prefWidth="200.0" text="&#10;•  Access to our whole test&#10;   catalogue&#10;&#10;•  Contact details of our &#10;   psychologists&#10;&#10;•  Discount: 26.19% from 120" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="725.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleConfirm" styleClass="confirm_button" text="Confirm" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="550.0" AnchorPane.rightAnchor="800.0" AnchorPane.topAnchor="20.0" />
+            <Button mnemonicParsing="false" onAction="#handleBack" styleClass="confirm_button" text="Back" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="800.0" AnchorPane.rightAnchor="550.0" AnchorPane.topAnchor="20.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
